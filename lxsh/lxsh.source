@@ -1,0 +1,1 @@
+alias lxsh='docker run -v $PWD:$PWD -it ubuntu bash -c "cd $PWD; exec /bin/bash"'
