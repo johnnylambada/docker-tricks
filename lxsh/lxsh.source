@@ -1,1 +1,1 @@
-alias lxsh='docker run --rm --name lxsh -v $PWD:$PWD -w $PWD -it ubuntu'
+alias lxsh='echo "export PS1=\"lxsh[\[$(tput bold)\]\t\[$(tput sgr0)\]\w]\\$\[$(tput sgr0)\] \"" > $TMPDIR/a5ad217e-0f2b-471e-a9f0-a49c4ae73668 && docker run --rm --name lxsh -v $TMPDIR/a5ad217e-0f2b-471e-a9f0-a49c4ae73668:/root/.bash_aliases -v $PWD:$PWD -w $PWD -it ubuntu'
